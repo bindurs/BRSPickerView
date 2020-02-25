@@ -23,12 +23,7 @@ class ViewController: UIViewController {
         pickerView.pickerViewDataArray = ["1", "2", "3", "4", "5"]
         pickerView.didDonePressed = dismissedMethodInRating(selectedString:)
         pickerView.heightAnchor.constraint(equalToConstant: heightOfPickerView).isActive = false
-        pickerView.isHidden = true
-        pickerView.layer.shadowColor = UIColor.gray.cgColor
-        pickerView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        pickerView.layer.shadowRadius = 5.0
-        pickerView.layer.shadowOpacity = 0.5
-        pickerView.clipsToBounds = false
+    
         
     }
     @IBAction func selectNumberButtonPressed(_ sender: UIButton) {

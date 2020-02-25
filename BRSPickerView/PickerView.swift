@@ -37,9 +37,15 @@ class PickerView: UIView {
         
         stackView.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: 50)
         pickerView.frame = CGRect(x: 0, y: stackView.frame.size.height + stackView.frame.origin.y, width: bounds.size.width, height: bounds.size.height - (stackView.frame.size.height + stackView.frame.origin.y))
-
+        
     }
     private func commonInit() {
+        
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        layer.shadowRadius = 5.0
+        layer.shadowOpacity = 0.5
+        clipsToBounds = false
         
         stackView.spacing = 10
         stackView.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: 50)

@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1755DEF12403A01F00B2246A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755DEF02403A01F00B2246A /* AppDelegate.swift */; };
-		1755DEF32403A01F00B2246A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755DEF22403A01F00B2246A /* SceneDelegate.swift */; };
 		1755DEF52403A01F00B2246A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755DEF42403A01F00B2246A /* ViewController.swift */; };
 		1755DEF82403A01F00B2246A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1755DEF62403A01F00B2246A /* Main.storyboard */; };
-		1755DEFB2403A01F00B2246A /* BRSPickerView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1755DEF92403A01F00B2246A /* BRSPickerView.xcdatamodeld */; };
 		1755DEFD2403A02E00B2246A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1755DEFC2403A02E00B2246A /* Assets.xcassets */; };
 		1755DF002403A02E00B2246A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1755DEFE2403A02E00B2246A /* LaunchScreen.storyboard */; };
+		1755DF0C2403A14500B2246A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755DF0B2403A14500B2246A /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1755DEED2403A01F00B2246A /* BRSPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRSPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1755DEF02403A01F00B2246A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1755DEF22403A01F00B2246A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1755DEF42403A01F00B2246A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1755DEF72403A01F00B2246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1755DEFA2403A01F00B2246A /* BRSPickerView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BRSPickerView.xcdatamodel; sourceTree = "<group>"; };
 		1755DEFC2403A02E00B2246A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1755DEFF2403A02E00B2246A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1755DF012403A02E00B2246A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1755DF0B2403A14500B2246A /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				1755DEF02403A01F00B2246A /* AppDelegate.swift */,
-				1755DEF22403A01F00B2246A /* SceneDelegate.swift */,
 				1755DEF42403A01F00B2246A /* ViewController.swift */,
 				1755DEF62403A01F00B2246A /* Main.storyboard */,
 				1755DEFC2403A02E00B2246A /* Assets.xcassets */,
 				1755DEFE2403A02E00B2246A /* LaunchScreen.storyboard */,
 				1755DF012403A02E00B2246A /* Info.plist */,
-				1755DEF92403A01F00B2246A /* BRSPickerView.xcdatamodeld */,
+				1755DF0B2403A14500B2246A /* PickerView.swift */,
 			);
 			path = BRSPickerView;
 			sourceTree = "<group>";
@@ -143,8 +140,7 @@
 			files = (
 				1755DEF52403A01F00B2246A /* ViewController.swift in Sources */,
 				1755DEF12403A01F00B2246A /* AppDelegate.swift in Sources */,
-				1755DEFB2403A01F00B2246A /* BRSPickerView.xcdatamodeld in Sources */,
-				1755DEF32403A01F00B2246A /* SceneDelegate.swift in Sources */,
+				1755DF0C2403A14500B2246A /* PickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2978ZP9J;
 				INFOPLIST_FILE = BRSPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KL2978ZP9J;
 				INFOPLIST_FILE = BRSPickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,19 +340,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1755DEF92403A01F00B2246A /* BRSPickerView.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1755DEFA2403A01F00B2246A /* BRSPickerView.xcdatamodel */,
-			);
-			currentVersion = 1755DEFA2403A01F00B2246A /* BRSPickerView.xcdatamodel */;
-			path = BRSPickerView.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 1755DEE52403A01F00B2246A /* Project object */;
 }

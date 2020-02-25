@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var selectedNumberButton: UIButton!
     @IBOutlet weak var pickerView: PickerView!
-    var heightOfPickerView : CGFloat = 250
+    var heightOfPickerView : CGFloat = 200
     
     override func viewDidLoad() {
         super.viewDidLoad()
